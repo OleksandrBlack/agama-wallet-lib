@@ -1,19 +1,19 @@
 {
-  "name": "agama-wallet-lib",
+  "name": "safewallet-wallet-lib",
   "version": "0.1.5",
-  "description": "Agama wallet library.",
+  "description": "Safewallet wallet library.",
   "keywords": [
-    "agama wallet",
+    "safewallet wallet",
     "wallet",
-    "komodo",
-    "supernet"
+    "safecoin",
+    "fairexchange"
   ],
-  "homepage": "https://github.com/pbca26/agama-wallet-lib",
+  "homepage": "https://github.com/pbca26/safewallet-wallet-lib",
   "bugs": {
-    "url": "https://github.com/pbca26/agama-wallet-lib/issues"
+    "url": "https://github.com/pbca26/safewallet-wallet-lib/issues"
   },
   "license": "MIT",
-  "author": "SuperNET",
+  "author": "FairExchange",
   "files": [
     "index.js",
     "src"
@@ -21,7 +21,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pbca26/agama-wallet-lib.git"
+    "url": "https://github.com/pbca26/safewallet-wallet-lib.git"
   },
   "scripts": {},
   "devDependencies": {
@@ -31,9 +31,9 @@
     "bigi": "^1.4.2",
     "bip39": "^2.4.0",
     "bluebird": "^3.4.7",
-    "bitcoinforksjs-lib": "git://github.com/SuperNETorg/bitcoinjs-lib#opt-in-bitcoincash-sighash",
-    "bitcoinjs-lib": "git://github.com/SuperNETorg/bitcoinjs-lib",
-    "bitcoinjs-lib-pos": "git://github.com/KomodoPlatform/bitcoinjs-lib-pos",
+    "bitcoinforksjs-lib": "git://github.com/FairExchangeorg/bitcoinforkjs-lib",
+    "bitcoinjs-lib": "git://github.com/FairExchangeorg/bitcoinjs-lib",
+    "bitcoinjs-lib-pos": "git://github.com/FairExchangeorg/bitcoinjs-lib-pos",
     "bitcoinjs-lib-zcash": "git://github.com/pbca26/bitcoinjs-lib#zcash",
     "buffer-reverse": "^1.0.1",
     "coinselect": "github:bitcoinjs/coinselect",

@@ -1,4 +1,4 @@
-const _komodoAssetChains = [
+const _safecoinAssetChains = [
   'SUPERNET',
   'REVS',
   'PANGEA',
@@ -32,16 +32,16 @@ const _komodoAssetChains = [
   'CHAIN'
 ];
 
-const _komodoCoins = _komodoAssetChains.concat([
+const _safecoinCoins = _safecoinAssetChains.concat([
   'CHIPS',
-  'KMD',
-  'KOMODO'
+  'SAFE',
+  'SAFECOIN'
 ]);
 
-const isKomodoCoin = (coin, skipKMD) => {
-  return (_komodoCoins.find((element) => {
-    if (skipKMD) {
-      return element === coin.toUpperCase() && coin.toUpperCase() !== 'KMD' && coin.toUpperCase() !== 'KOMODO';
+const isSafecoinCoin = (coin, skipSAFE) => {
+  return (_safecoinCoins.find((element) => {
+    if (skipSAFE) {
+      return element === coin.toUpperCase() && coin.toUpperCase() !== 'SAFE' && coin.toUpperCase() !== 'SAFECOIN';
     } else {
       return element === coin.toUpperCase();
     }
@@ -50,8 +50,8 @@ const isKomodoCoin = (coin, skipKMD) => {
 
 // TODO: add at least 2 explorers per coin
 const explorerList = {
-  KMD: 'http://www.kmdexplorer.ru',
-  KV: 'http://kv.explorer.supernet.org',
+  SAFE: 'https://explorer.safecoin.org',
+  KV: 'http://kv.explorer.fairexchange.org',
   OOT: 'http://explorer.utrum.io',
   BNTN: 'http://chain.blocnation.io',
   CHAIN: 'http://explorer.chainmakers.co',
@@ -134,14 +134,14 @@ const explorerList = {
 };
 
 const explorerListExt = {
-  DEX: 'http://dex.explorer.komodo.services',
-  SUPERNET: 'http://supernet.explorer.komodo.services',
+  DEX: 'http://dex.explorer.safecoin.services',
+  SUPERNET: 'http://fairexchange.explorer.safecoin.services',
 };
 
 module.exports = {
-  isKomodoCoin,
+  isSafecoinCoin,
   explorerList,
   explorerListExt,
-  kmdAssetChains: _komodoAssetChains,
-  kmdCoins: _komodoCoins, // all coins that share R-addresses
+  safeAssetChains: _safecoinAssetChains,
+  safeCoins: _safecoinCoins, // all coins that share R-addresses
 };

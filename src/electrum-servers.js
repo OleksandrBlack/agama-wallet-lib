@@ -62,7 +62,7 @@ const electrumServers = {
       'electrum2.cipig.net:10003:tcp'
     ],
   },
-  supernet: {
+  fairexchange: {
     txfee: 10000,
     serverList: [
       'electrum1.cipig.net:10005:tcp',
@@ -188,11 +188,11 @@ const electrumServers = {
       'electrum2.cipig.net:10004:tcp'
     ],
   },
-  kmd: {
+  safe: {
     txfee: 10000,
     serverList: [
-      'electrum1.cipig.net:10001:tcp',
-      'electrum2.cipig.net:10001:tcp',
+      'local.support:10001:tcp',
+      'local.support:10001:tcp',
     ],
   },
   doge: {
