@@ -8,9 +8,9 @@
     "safecoin",
     "fairexchange"
   ],
-  "homepage": "https://github.com/pbca26/safewallet-wallet-lib",
+  "homepage": "https://github.com/OleksandrBlack/safewallet-wallet-lib",
   "bugs": {
-    "url": "https://github.com/pbca26/safewallet-wallet-lib/issues"
+    "url": "https://github.com/OleksandrBlack/safewallet-wallet-lib/issues"
   },
   "license": "MIT",
   "author": "FairExchange",
@@ -21,7 +21,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pbca26/safewallet-wallet-lib.git"
+    "url": "https://github.com/OleksandrBlack/safewallet-wallet-lib.git"
   },
   "scripts": {},
   "devDependencies": {
