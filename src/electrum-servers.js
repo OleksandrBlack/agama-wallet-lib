@@ -192,7 +192,7 @@ const electrumServers = {
     txfee: 10000,
     serverList: [
       'local.support:10001:tcp',
-      'local.support:10001:tcp',
+      '45.63.13.60:10001:tcp'
     ],
   },
   doge: {
