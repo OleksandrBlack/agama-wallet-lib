@@ -29,7 +29,13 @@ const _safecoinAssetChains = [
   'EQL',
   'BNTN',
   'PRLPAY',
-  'CHAIN'
+  'CHAIN',
+  'ZILLA',
+  'DSEC',
+  'VRSC',
+  'XSG',
+  'BTCZ',
+  'CMM'
 ];
 
 const _safecoinCoins = _safecoinAssetChains.concat([
@@ -51,36 +57,41 @@ const isSafecoinCoin = (coin, skipSAFE) => {
 // TODO: add at least 2 explorers per coin
 const explorerList = {
   SAFE: 'https://explorer.safecoin.org',
-  KV: 'http://kv.explorer.fairexchange.org',
+  XSG: 'https://insight.snowgem.org',
+  BTCZ: 'https://explorer.bitcoinz.site',
+  CMM: 'http://cmm.explorer.commercium.net',
+  KV: 'https://kv.kmdexplorer.io',
   OOT: 'http://explorer.utrum.io',
   BNTN: 'http://chain.blocnation.io',
   CHAIN: 'http://explorer.chainmakers.co',
   GLXT: 'http://glx.info',
   PRLPAY: 'http://explorer.prlpay.com',
-  MSHARK: 'http://MSHARK.explorer.supernet.org',
-  REVS: 'http://revs.explorer.supernet.org',
-  SUPERNET: 'http://SUPERNET.explorer.supernet.org',
-  DEX: 'http://DEX.explorer.supernet.org',
-  PANGEA: 'http://PANGEA.explorer.supernet.org',
-  JUMBLR: 'http://JUMBLR.explorer.supernet.org',
-  BET: 'http://BET.explorer.supernet.org',
-  CRYPTO: 'http://CRYPTO.explorer.supernet.org',
-  HODL: 'http://HODL.explorer.supernet.org',
+  MSHARK: 'https://mshark.kmdexplorer.io',
+  REVS: 'https://revs.kmdexplorer.io',
+  SUPERNET: 'https://supernet.kmdexplorer.io',
+  DEX: 'https://dex.kmdexplorer.io',
+  PANGEA: 'https://pangea.kmdexplorer.io',
+  JUMBLR: 'https://jumblr.kmdexplorer.io',
+  BET: 'https://bet.kmdexplorer.io',
+  CRYPTO: 'https://crypto.kmdexplorer.io',
+  HODL: 'https://hodl.kmdexplorer.io',
   SHARK: 'http://SHARK.explorer.supernet.org',
-  BOTS: 'http://BOTS.explorer.supernet.org',
-  MGW: 'http://MGW.explorer.supernet.org',
-  WLC: 'http://WIRELESS.explorer.supernet.org',
+  BOTS: 'https://bots.kmdexplorer.io',
+  MGW: 'https://mgw.kmdexplorer.io',
+  WLC: 'https://wlc.kmdexplorer.io',
   CHIPS: 'http://CHIPS1.explorer.supernet.org',
   COQUI: 'https://explorer.coqui.cash',
   EQL: 'http://178.62.240.191',
-  MNZ: 'https://www.mnzexplorer.com',
-  BTCH: 'http://www.btch.host',
+  MNZ: 'https://mnz.kmdexplorer.io',
+  BTCH: 'https://btch.kmdexplorer.io',
   BTC: 'https://blockchain.info',
   HUSH: 'https://explorer.myhush.org',
   PIZZA: 'http://pizza.komodochainz.info',
   BEER: 'http://beer.komodochainz.info',
-  NINJA: 'https://explorer.fund.ninja',
+  NINJA: 'https://ninja.kmdexplorer.io',
   VOTE2018: 'http://88.99.226.252',
+  DSEC: 'https://dsec.kmdexplorer.io',
+  VRSC: 'https://vrsc.kmdexplorer.io',
   QTUM: 'https://explorer.qtum.org',
   DNR: 'http://denarius.name',
   LTC: 'https://live.blockcypher.com/ltc/tx/',
@@ -130,12 +141,13 @@ const explorerList = {
   FJC: 'http://explorer.fujicoin.org',
   LINX: 'http://explorer.mylinx.io/?',
   CDN: 'https://explorer.canadaecoin.ca',
-  FLASH: 'https://explorer.flashcoin.io'
+  FLASH: 'https://explorer.flashcoin.io',
+  ZILLA: 'http://zilla.explorer.dexstats.info',
 };
 
 const explorerListExt = {
-  DEX: 'http://dex.explorer.safecoin.services',
-  SUPERNET: 'http://fairexchange.explorer.safecoin.services',
+  DEX: 'http://dex.explorer.komodo.services', //TODO
+  SUPERNET: 'http://supernet.explorer.komodo.services', //TODO
 };
 
 module.exports = {
