@@ -1,4 +1,11 @@
 const electrumServers = {
+  zilla: {
+    txfee: 10000,
+    serverList: [
+      'electrum1.cipig.net:10028:tcp',
+      'electrum2.cipig.net:10028:tcp'
+    ],
+  },
   prlpay: {
     txfee: 10000,
     serverList: [
@@ -37,8 +44,8 @@ const electrumServers = {
   coqui: {
     txfee: 10000,
     serverList: [
-      'electrum1.cipig.net:10011',
-      'electrum2.cipig.net:10011'
+      'electrum1.cipig.net:10011:tcp',
+      'electrum2.cipig.net:10011:tcp'
     ],
   },
   chain: {
@@ -192,7 +199,7 @@ const electrumServers = {
     txfee: 10000,
     serverList: [
       'local.support:10001:tcp',
-      'local.support:10001:tcp',
+      '45.63.13.60:10001:tcp'
     ],
   },
   doge: {
@@ -440,6 +447,28 @@ const electrumServers = {
       'electrumx1.fujicoin.org:50001:tcp',
       'electrumx2.fujicoin.org:50001:tcp',
       'electrumx3.fujicoin.org:50001:tcp'
+    ],
+  },
+  xsg: {
+    txfee: 100000,
+    serverList: [
+      'electrumsvr.snowgem.org:50001:tcp',
+      'electrumsvr2.snowgem.org:50001:tcp',
+      'local.support:50001:tcp'
+    ],
+  },
+  btcz: {
+    txfee: 100000,
+    serverList: [
+      'electrum1.cipig.net:10056:tcp',
+      'electrum2.cipig.net:10056:tcp'
+    ],
+  },
+  cmm: {
+    txfee: 100000,
+    serverList: [
+      'elec01.commercium.net:50001:tcp',
+      'elec02.commercium.net:50001:tcp'
     ],
   },
 };
