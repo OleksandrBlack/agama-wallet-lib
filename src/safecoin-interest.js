@@ -1,6 +1,6 @@
 // TODO: tiptime != 0 && nLockTime < tiptime
 module.exports = (locktime, value, height) => { // value in sats
-  const SAFECOIN_ENDOFERA = 7777777;
+  const SAFECOIN_ENDOFERA = 77195; //7777777
   const LOCKTIME_THRESHOLD = 500000000;
   const timestampDiff = Math.floor(Date.now() / 1000) - locktime - 777;
   const hoursPassed = Math.floor(timestampDiff / 3600);
@@ -27,10 +27,11 @@ module.exports = (locktime, value, height) => { // value in sats
         // const hoursInOneYear = 365 * 24;
         // const hoursDiff = hoursInOneYear - hoursPassed;
 
-        interest = (((Number(value) * 0.00000001) / 10512000) * timestampDiffMinutes).toFixed(8);
+//        interest = (((Number(value) * 0.00000001) / 10512000) * timestampDiffMinutes).toFixed(8);
+        interest = 0;
       }
     }
   }
 
-  return interest;
+  return 0; // interest
 };

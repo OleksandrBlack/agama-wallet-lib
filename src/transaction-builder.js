@@ -180,12 +180,12 @@ const data = (network, value, fee, outputAddress, changeAddress, utxoList) => {
         }
       }
 
-      for (let i = 0; i < inputs.length; i++) {
-        if (Number(inputs[i].interestSats) > interestClaimThreshold) {
-          totalInterest += Number(inputs[i].interestSats);
-          totalInterestUTXOCount++;
-        }
-      }
+//      for (let i = 0; i < inputs.length; i++) {
+//        if (Number(inputs[i].interestSats) > interestClaimThreshold) {
+//          totalInterest += Number(inputs[i].interestSats);
+//          totalInterestUTXOCount++;
+//        }
+//      }
     }
 
     const _maxSpend = utils.maxSpendBalance(utxoListFormatted);
